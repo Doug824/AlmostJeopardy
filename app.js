@@ -68,25 +68,25 @@ function handleClick(evt) {
     }
     // Update text of cell
     $(`#${catId}-${clueId}`).html(msg);
-}
+};
 
-//Page Loader
+//Page Loader.
 document.onreadystatechange = function() { 
     if (document.readyState !== "complete") { 
         document.querySelector( 
-            "body").style.visibility = "hidden"; 
+            "#jGame").style.visibility = "hidden"; 
         document.querySelector( 
             "#loader").style.visibility = "visible"; 
     } else { 
         document.querySelector( 
             "#loader").style.display = "none"; 
         document.querySelector( 
-            "body").style.visibility = "visible"; 
+            "#jGame").style.visibility = "visible"; 
     } 
 }; 
 
 
-/** Start game:*/
+// Start game.
 async function setupAndStart() {
     let catIds = await getCategoryIds();
     categories = [];
@@ -94,14 +94,14 @@ async function setupAndStart() {
         categories.push(await getCategory(catId));
     }
     fillTable();
-}
+};
 
 
-/** On click of restart button, restart game. */
+// On click of restart button, restart game.
 $("#restart").on("click", setupAndStart);
 
 
-// /** On page load, setup and start & add event handler for clicking clues */
+// Setup, start & add event handler for clicking clues on Page load.
 $(async function () {
     setupAndStart();
     $("#jeopardy").on("click", "td", handleClick);

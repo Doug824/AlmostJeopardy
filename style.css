@@ -20,7 +20,7 @@ html, body {
 
 #jeopardy {
   text-align: center;
-  font-size: 9pt;
+  font-size: 10pt;
   color: white;
   border-collapse: collapse;
   margin-left: auto;
@@ -38,9 +38,7 @@ html, body {
 th {
   text-transform: uppercase;
   font-family: Helvetica, sans-serif;
-  font-weight: bold;
   height: 4em;
-  text-shadow:  #ebc82c 1px 1px;
 }
 
 td {
@@ -53,25 +51,27 @@ td:hover {
 }
 
 #restart {
-background-color:#ebc82c;
+  background-color:#ebc82c;
 }
 
 #restart:hover {
   cursor: pointer;
+  background-color: rgb(47, 194, 174); 
 
 }
 
-.container{  
+.container {  
   text-align: center;  
-  width: 850px;  
-  height: 650px;  
-  padding-top: 100px;  
+  width: 1000px;  
+  height: 800px;  
+  padding-top: 100px;
 }
 
-.hcontainer{
+.gameTitle {
 color: #ebc82c;
 font-family: 'Ultra', serif;
 text-align: center;
+font-size: 20px;
 }
 
 #loader { 
