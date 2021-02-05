@@ -1,0 +1,98 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.jeopardy-game {
+  background-color: #222;
+  color: white;
+  font-size: .75vw;
+  text-align: center;
+  background: linear-gradient(180deg, #2E2E3A 0%, #0C0C2C 100%);
+  height: 100%;
+  display: block;
+  width: 100%;
+}
+
+#jeopardy {
+  text-align: center;
+  font-size: 9pt;
+  color: white;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#jeopardy th, #jeopardy td {
+  border: solid 1px white;
+  background-color:#011BA9;
+  width: 400px;
+  height: 50px;
+  padding: 1em;
+}
+
+th {
+  text-transform: uppercase;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  height: 4em;
+  text-shadow:  #ebc82c 1px 1px;
+}
+
+td {
+  height: 9em;
+  font-family: Copse, serif;
+}
+
+td:hover {
+  cursor: pointer;
+}
+
+#restart {
+background-color:#ebc82c;
+}
+
+#restart:hover {
+  cursor: pointer;
+
+}
+
+.container{  
+  text-align: center;  
+  width: 850px;  
+  height: 650px;  
+  padding-top: 100px;  
+}
+
+.hcontainer{
+color: #ebc82c;
+font-family: 'Ultra', serif;
+text-align: center;
+}
+
+#loader { 
+  border: 12px solid #f3f3f3; 
+  border-radius: 50%; 
+  border-top: 12px solid #444444; 
+  width: 70px; 
+  height: 70px; 
+  animation: spin 1s linear infinite; 
+} 
+
+@keyframes spin { 
+  100% { 
+      transform: rotate(360deg); 
+  } 
+} 
+
+.center { 
+  position: absolute; 
+  top: 0; 
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  margin: auto; 

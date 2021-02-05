@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <title>Jeopardy!</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ultra&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Copse&display=swap">
+      <link rel="stylesheet" href="style.css">
+</head>
+
+<Header>
+      <div class="hcontainer">
+            <h1 class="title">Jeopardy Game</h1>                 
+      </div>
+</Header>
+<hr>
+
+<body class="jeopardy-game">
+      
+      <div id="loader" class="center"></div>
+      
+      <table id="jeopardy" class="container" >
+            <thead></thead>
+            <tbody id="tbody"></tbody>
+      </table>
+
+      <button id="restart" class="restart">Reset Board?</button>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/jquery"></script>
+      <script src="https://unpkg.com/axios/dist/axios.js"></script>
+      <script src="https://unpkg.com/lodash"></script>
+      <script src="app.js"></script>
+
+</body>
+</html>
